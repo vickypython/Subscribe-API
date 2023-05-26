@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/645cc8dc1a67205ad1e5c29c
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"XssRat",
+    "subscribedToChannel":"Anonymous Angel"
+}
+
+###
+DELETE http://localhost:3000/subscribers
+
+###
+PATCH  http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"New name"
+}
